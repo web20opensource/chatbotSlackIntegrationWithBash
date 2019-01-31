@@ -87,7 +87,7 @@ controller.hears(
                         }
                         console.log("Local file was saved!");
                     });
-                    await exec(`scp /tmp/MGO_Whitelist.csv xb91@dmnanlx7105:".//phpdevdeploy//data\\ extensions//MGO_Whitelist.csv"`, (err, stdout, stderr) => {
+                    await exec(`scp /tmp/MGO_Whitelist.csv user@server:".//phpdevdeploy//data\\ extensions//MGO_Whitelist.csv"`, (err, stdout, stderr) => {
                       if (err) {
                         // node couldn't execute the command
                         convo.say({text: `Stderr: ${stderr} \r\n Error: ${err}`});
@@ -100,7 +100,7 @@ controller.hears(
                       console.log(`stdout: ${stdout}`);
                       console.log(`stderr: ${stderr}`);
                     });
-                    await exec(`ssh dmnanlx7105 "cd /home/xb91/phpdevdeploy; /usr/bin/php /home/xb91/phpdevdeploy/devDeployDE.php QA"`, (err, stdout, stderr) => {
+                    await exec(`ssh server "cd /home/user/phpdevdeploy; /usr/bin/php /home/user/phpdevdeploy/devDeployDE.php QA"`, (err, stdout, stderr) => {
                       if (err) {
                         // node couldn't execute the command
                         convo.say({text: `Stderr: ${stderr} \r\n Error: ${err}`});
