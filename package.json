@@ -1,0 +1,25 @@
+{
+  "name": "emailBot",
+  "version": "1.0.0",
+  "description": "Deploy stuff from emailBot",
+  "main": "emailBot.js",
+  "dependencies": {
+    "botkit": "0.1.1",
+    "email-validator": "^2.0.4",
+    "node-cron": "^1.2.1",
+    "shelljs": "^0.8.2"
+  },
+  "devDependencies": {
+    "standard": "^7.1.1",
+    "cron": "^1.4.1"
+  },
+  "scripts": {
+    "test": "standard \"**/*.js\""
+  },
+  " repository": {
+    "type": "git",
+    "url": "https://github.com/web20opensource/"
+  },
+  "author": "Mario Ruiz",
+  "license": "Apache-2.0"
+}
